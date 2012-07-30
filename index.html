@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+	
+	<title> New Document </title>
+	
+	<meta name="Generator" content="EditPlus">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+
+	<link rel="shortcut icon" href="http://icon.orchestra.io/icon2.jpg" type="image/x-icon"/>
+	
+<style type="text/css">
+	body{
+		background-color:black;	
+	}
+
+	div{
+		width:720px;
+		margin:0 auto;
+		text-align:center;
+		margin-top:30px;
+		color:red;
+		font-weight:bold;
+		font-size:20px;
+	}
+	</style>
+
+	<script language="JavaScript" type="text/JavaScript">
+		function $(id){
+			return document.getElementById(id);
+		}
+		
+		function displayTime(){
+			$("clock").innerHTML=(new Date()).toLocaleString();
+			$("theDay").innerHTML=(theDay).toLocaleString();
+				
+			var last=new Date();
+			last=theDay-new Date();
+			$("last").innerHTML="ªπ”–"+Math.round(last/1000).toLocaleString()+"√Î£°";
+		}
+		
+		
+
+		var theDay=new Date();
+			with(theDay){
+				setFullYear(2012);
+				setMonth(7);
+				setDate(25);
+				setHours(0);
+				setMinutes(0);
+				setSeconds(0);
+			}
+		
+		var last=new Date();
+		last=theDay-new Date();
+
+		function init(){
+			window.setInterval("displayTime()",1000);
+		}
+	</script>
+
+	</head>
+
+	<body onload="init()">
+		
+		<div id="theDay"></div>
+		<div>-</div>
+		<div id="clock"></div>
+		<div>=</div>
+		<div id="last"></div>
+		<div><img src="yuxi.jpg" / ></div>
+	
+	</body>
+</html>
